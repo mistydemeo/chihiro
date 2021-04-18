@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [data, setData] = useState();
   // Language/region pair, e.g. ja-jp or en-us
-  const [language, setLanguage] = useState("ja");
-  const [region, setRegion] = useState("jp");
+  const [language, setLanguage] = useState("en");
+  const [region, setRegion] = useState("ca");
   // The PSN ID for the game you want to look up
-  const [id, setId] = useState("");
+  const [id, setId] = useState("UP4501-PCSE00540_00-00001AQUAKITTYDX");
 
   const idInputChanged = (event) => {
     setId(event.target.value);
@@ -31,13 +31,15 @@ function App() {
   if (data && data.codeName == null) {
     return <div className="App">
       <select name="region" id="region" onChange={ regionSelectChanged }>
-        <option value="ca">Canada (ca)</option>
-        <option value="jp" selected="selected">Japan (jp)</option>
+        <option value="ca" selected="selected">Canada (ca)</option>
+        <option value="hk">Hong Kong (hk)</option>
+        <option value="jp">Japan (jp)</option>
         <option value="us">United States (us)</option>
+        <option value="gb">United Kingdom (gb)</option>
       </select>
       <select name="language" id="language" onChange={ languageSelectChanged }>
-        <option value="en">English</option>
-        <option value="ja" selected="selected">Japanese</option>
+        <option value="en" selected="selected">English</option>
+        <option value="ja">Japanese</option>
         <option value="zh">Chinese</option>
       </select>
       <input type="text" value={ id } onChange={ idInputChanged }/>
@@ -61,14 +63,15 @@ function App() {
   } else if (data && data.codeName) {
     return <div>
       <select name="region" id="region" onChange={ regionSelectChanged }>
-        <option value="ca">Canada (ca)</option>
+        <option value="ca" selected="selected">Canada (ca)</option>
         <option value="hk">Hong Kong (hk)</option>
-        <option value="jp" selected="selected">Japan (jp)</option>
+        <option value="jp">Japan (jp)</option>
         <option value="us">United States (us)</option>
+        <option value="gb">United Kingdom (gb)</option>
       </select>
       <select name="language" id="language" onChange={ languageSelectChanged }>
-        <option value="en">English (en)</option>
-        <option value="ja" selected="selected">Japanese (jp)</option>
+        <option value="en" selected="selected">English (en)</option>
+        <option value="ja">Japanese (jp)</option>
         <option value="zh">Chinese (zh)</option>
       </select>
       <input type="text" value={ id } onChange={ idInputChanged }/>

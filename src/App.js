@@ -53,10 +53,12 @@ function App() {
         <tr>
           <th>Platform</th>
           <th>Price</th>
+          <th>Release Date</th>
           <th>Description</th>
         </tr>
         <tr>
           <td valign="top">{ (data.playable_platform || []).join(", ") }</td>
+          <td valign="top">{ new Date(data.release_date).toDateString() }</td>
           <td valign="top">{ data.default_sku.display_price }</td>
           <td><div dangerouslySetInnerHTML={ {__html: data.long_desc} } /></td>
         </tr>

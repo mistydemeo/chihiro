@@ -45,6 +45,9 @@ function App() {
       <input type="text" value={ id } onChange={ idInputChanged }/>
 
       <h3>{ data.title_name } ({ data.id })</h3>
+
+      <center><img border="1" width="33%" src={ data.images[0]["url"] } alt="Cover art"/></center>
+
       <table border="1">
         <tbody>
         <tr>

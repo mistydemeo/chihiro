@@ -1,5 +1,6 @@
 {
   "name": "chihiro",
+  "homepage": "https://mistydemeo.github.io/chihiro",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

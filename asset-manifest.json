@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chihiro/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/chihiro/static/js/main.999785b0.chunk.js",
-    "main.js.map": "/chihiro/static/js/main.999785b0.chunk.js.map",
+    "main.js": "/chihiro/static/js/main.66603909.chunk.js",
+    "main.js.map": "/chihiro/static/js/main.66603909.chunk.js.map",
     "runtime-main.js": "/chihiro/static/js/runtime-main.6efe24c6.js",
     "runtime-main.js.map": "/chihiro/static/js/runtime-main.6efe24c6.js.map",
     "static/js/2.10231468.chunk.js": "/chihiro/static/js/2.10231468.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.6efe24c6.js",
     "static/js/2.10231468.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.999785b0.chunk.js"
+    "static/js/main.66603909.chunk.js"
   ]
 }
